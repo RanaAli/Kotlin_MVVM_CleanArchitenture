@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Movies Kotlin</string>
+
+    <string name="action_refresh">Refresh</string>
+
+    <string name="failure_network_connection">No Network Connection.</string>
+    <string name="failure_server_error">Server Error</string>
+    <string name="failure_movies_list_unavailable">Movies Unavailable.</string>
+    <string name="failure_movie_non_existent">Movie Not Existent.</string>
+
+    <string name="api_key">4a703e0d0c5d3fea538ba225463200d3</string>
+    <string name="baseURL">http://api.themoviedb.org/3/</string>
+    <string name="imageURL">http://image.tmdb.org/t/p/</string>
+    <string name="filterText">Filer By Date</string>
+</resources>

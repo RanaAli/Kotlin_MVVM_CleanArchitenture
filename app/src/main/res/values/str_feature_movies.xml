@@ -1,0 +1,8 @@
+<resources>
+    <string name="movies_screen_title">Movies</string>
+    <string name="movie_details_screen_title">Movie Details</string>
+    <string name="movie_details_summary">Summary</string>
+
+    <!-- Animations -->
+    <string name="movie_transition_poster">moviePosterTransition</string>
+</resources>

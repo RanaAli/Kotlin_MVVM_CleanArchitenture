@@ -1,0 +1,22 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="movie_details_title">20dp</dimen>
+    <dimen name="movie_details_text">15dp</dimen>
+
+    <!-- Progress view. -->
+    <dimen name="progress_view_height">10dp</dimen>
+
+    <dimen name="padding_max">16dp</dimen>
+    <dimen name="margin_max">16dp</dimen>
+    <dimen name="margin_half">8dp</dimen>
+    <dimen name="spacing">4dp</dimen>
+    <dimen name="movie_details_padding">25dp</dimen>
+    <dimen name="empty_view_padding">160dp</dimen>
+    <dimen name="movie_item_image_width">124dp</dimen>
+    <dimen name="movie_item_image_height">190dp</dimen>
+    <dimen name="toolbar_margin">-14dp</dimen>
+    <dimen name="progress_bar_padding_top">-4dp</dimen>
+</resources>
