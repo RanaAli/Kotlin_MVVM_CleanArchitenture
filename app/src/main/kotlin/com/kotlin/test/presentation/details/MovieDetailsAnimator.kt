@@ -1,12 +1,11 @@
-
 package com.kotlin.test.presentation.details
 
-import android.support.v4.app.FragmentActivity
-import android.support.v4.view.animation.FastOutSlowInInterpolator
 import android.transition.Fade
 import android.transition.TransitionManager
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentActivity
+import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import com.kotlin.test.core.extension.cancelTransition
 import javax.inject.Inject
 

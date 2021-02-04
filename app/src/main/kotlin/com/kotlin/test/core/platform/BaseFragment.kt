@@ -1,21 +1,20 @@
-
 package com.kotlin.test.core.platform
 
-import android.arch.lifecycle.ViewModelProvider
 import android.os.Bundle
-import android.support.annotation.StringRes
-import android.support.design.widget.Snackbar
-import android.support.v4.app.Fragment
-import android.support.v4.content.ContextCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.StringRes
+import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import com.google.android.material.snackbar.Snackbar
 import com.kotlin.test.AndroidApplication
 import com.kotlin.test.R.color
 import com.kotlin.test.core.di.ApplicationComponent
 import com.kotlin.test.core.extension.appContext
 import com.kotlin.test.core.extension.viewContainer
-import kotlinx.android.synthetic.main.toolbar.progress
+import kotlinx.android.synthetic.main.toolbar.*
 import javax.inject.Inject
 
 /**
@@ -31,7 +30,8 @@ abstract class BaseFragment : Fragment() {
         (activity?.application as AndroidApplication).appComponent
     }
 
-    @Inject lateinit var viewModelFactory: ViewModelProvider.Factory
+    @Inject
+    lateinit var viewModelFactory: ViewModelProvider.Factory
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View =
             inflater.inflate(layoutId(), container, false)

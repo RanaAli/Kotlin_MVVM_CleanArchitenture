@@ -1,7 +1,7 @@
 package com.kotlin.test.presentation.movies
 
-import android.support.v7.widget.RecyclerView
 import android.view.View
+import androidx.recyclerview.widget.RecyclerView
 import com.kotlin.test.core.navigation.Navigator
 import com.kotlin.test.presentation.ImageUtils
 import com.kotlin.test.presentation.ImageUtils.POSTER_SIZE_W_185

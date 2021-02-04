@@ -1,6 +1,6 @@
 package com.kotlin.test.presentation.viewmodel
 
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.MutableLiveData
 import com.kotlin.test.core.platform.BaseViewModel
 import com.kotlin.test.domain.model.Discover
 import com.kotlin.test.domain.usecase.GetMovies

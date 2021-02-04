@@ -1,7 +1,9 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-kapt'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+plugins {
+  id 'com.android.application'
+  id 'kotlin-android'
+  id 'kotlin-android-extensions'
+  id 'kotlin-kapt'
+}
 
 android {
   def config = rootProject.extensions.getByName("ext")
@@ -76,7 +78,7 @@ dependencies {
   compileOnly applicationDependencies.javaxInject
 
   //Application dependencies
-  implementation applicationDependencies.kotlin
+  implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.21"
   implementation applicationDependencies.kotlinCoroutines
   implementation applicationDependencies.kotlinCoroutinesAndroid
 
@@ -92,15 +94,15 @@ dependencies {
 
   implementation applicationDependencies.dagger
   implementation applicationDependencies.daggerAndroidSupport
-  annotationProcessor applicationDependencies.daggerAndroidProcessor
+  kapt applicationDependencies.daggerAndroidProcessor
   kapt applicationDependencies.daggerCompiler
 
   implementation applicationDependencies.retrofit
   implementation applicationDependencies.okhttpLoggingInterceptor
 
   //Unit/Integration tests dependencies
-  testImplementation unitTestDependencies.kotlin
-  testImplementation unitTestDependencies.kotlinTest
+  testImplementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.30"
+  testImplementation "org.jetbrains.kotlin:kotlin-test-junit:1.4.30"
   testImplementation unitTestDependencies.robolectric
   testImplementation unitTestDependencies.junit
   testImplementation unitTestDependencies.mockito
@@ -117,10 +119,4 @@ dependencies {
   debugImplementation developmentDependencies.leakCanary
   releaseImplementation developmentDependencies.leakCanaryNoop
   testImplementation developmentDependencies.leakCanaryNoop
-}
-
-kotlin {
-  experimental {
-    coroutines "enable"
-  }
 }

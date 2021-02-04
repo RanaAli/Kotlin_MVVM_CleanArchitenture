@@ -1,8 +1,8 @@
 
 package com.kotlin.test.core.platform
 
-import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.kotlin.test.core.exception.Failure
 
 /**

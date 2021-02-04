@@ -2,11 +2,11 @@
 package com.kotlin.test.core.platform
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.kotlin.test.R.id
 import com.kotlin.test.R.layout
 import com.kotlin.test.core.extension.inTransaction
-import kotlinx.android.synthetic.main.toolbar.toolbar
+import kotlinx.android.synthetic.main.toolbar.*
 
 /**
  * Base Activity class with helper methods for handling fragment transactions and back button

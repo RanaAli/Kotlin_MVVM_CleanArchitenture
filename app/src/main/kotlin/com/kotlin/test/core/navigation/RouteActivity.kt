@@ -2,7 +2,7 @@
 package com.kotlin.test.core.navigation
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.kotlin.test.AndroidApplication
 import com.kotlin.test.core.di.ApplicationComponent
 import javax.inject.Inject

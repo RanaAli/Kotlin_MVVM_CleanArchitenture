@@ -2,14 +2,13 @@
 package com.kotlin.test.core.extension
 
 import android.graphics.drawable.Drawable
-import android.support.annotation.LayoutRes
-import android.support.v4.app.FragmentActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.annotation.LayoutRes
+import androidx.fragment.app.FragmentActivity
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.target.BaseTarget
 import com.bumptech.glide.request.target.SizeReadyCallback
 import com.bumptech.glide.request.target.Target
@@ -41,12 +40,12 @@ fun ImageView.loadUrlAndPostponeEnterTransition(url: String, activity: FragmentA
 }
 
 private class ImageViewBaseTarget(var imageView: ImageView?, var activity: FragmentActivity?) : BaseTarget<Drawable>() {
-    override fun removeCallback(cb: SizeReadyCallback?) {
+    override fun removeCallback(cb: SizeReadyCallback) {
         imageView = null
         activity = null
     }
 
-    override fun onResourceReady(resource: Drawable, transition: Transition<in Drawable>) {
+    override fun onResourceReady(resource: Drawable, transition: Transition<in Drawable>?) {
         imageView?.setImageDrawable(resource)
         activity?.supportStartPostponedEnterTransition()
     }

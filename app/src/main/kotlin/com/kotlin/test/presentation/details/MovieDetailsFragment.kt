@@ -57,7 +57,7 @@ class MovieDetailsFragment : BaseFragment() {
     companion object {
         private const val PARAM_MOVIE = "param_movie"
 
-        fun forMovie(movie: MovieView): MovieDetailsFragment {
+        fun forMovie(movie: MovieView?): MovieDetailsFragment {
             val movieDetailsFragment = MovieDetailsFragment()
             val arguments = Bundle()
             arguments.putParcelable(PARAM_MOVIE, movie)

@@ -18,5 +18,7 @@ class MovieDetailsActivity : BaseActivity() {
         }
     }
 
-    override fun fragment() = MovieDetailsFragment.forMovie(intent.getParcelableExtra(INTENT_EXTRA_PARAM_MOVIE))
+    override fun fragment() = MovieDetailsFragment.forMovie(
+            intent.getParcelableExtra(INTENT_EXTRA_PARAM_MOVIE)
+    )
 }

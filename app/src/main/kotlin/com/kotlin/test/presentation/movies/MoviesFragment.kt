@@ -3,9 +3,9 @@ package com.kotlin.test.presentation.movies
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.os.Bundle
-import android.support.annotation.StringRes
-import android.support.v7.widget.GridLayoutManager
 import android.view.View
+import androidx.annotation.StringRes
+import androidx.recyclerview.widget.GridLayoutManager
 import com.kotlin.test.R
 import com.kotlin.test.core.exception.Failure
 import com.kotlin.test.core.exception.Failure.NetworkConnection
@@ -83,7 +83,7 @@ class MoviesFragment : BaseFragment() {
     }
 
     private fun renderMoviesList(movies: List<MovieView>?) {
-        moviesAdapter.collection.addAll(movies.orEmpty())
+        moviesAdapter.addItems(movies.orEmpty())
         hideProgress()
     }
 

@@ -5,16 +5,16 @@ import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
-import android.support.v4.app.ActivityOptionsCompat
-import android.support.v4.app.FragmentActivity
 import android.view.View
 import android.widget.ImageView
+import androidx.core.app.ActivityOptionsCompat
+import androidx.fragment.app.FragmentActivity
+import com.kotlin.test.core.extension.empty
+import com.kotlin.test.presentation.details.MovieDetailsActivity
 import com.kotlin.test.presentation.login.Authenticator
 import com.kotlin.test.presentation.login.LoginActivity
-import com.kotlin.test.presentation.details.MovieDetailsActivity
 import com.kotlin.test.presentation.movies.MovieView
 import com.kotlin.test.presentation.movies.MoviesActivity
-import com.kotlin.test.core.extension.empty
 import javax.inject.Inject
 import javax.inject.Singleton
 
